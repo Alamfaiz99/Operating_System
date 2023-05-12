@@ -1,0 +1,47 @@
+These four concepts together help us understand different aspects of scheduling in an operating system. 
+The long-term scheduler decides which processes to admit, 
+the short-term scheduler determines the order of execution, 
+preemptive scheduling allows for task interruption, 
+and non-preemptive scheduling ensures tasks complete before switching.
+
+
+Sure! I'll explain the concepts of LTS, STS, preemptive, and non-preemptive in a way that a 15-year-old student can understand:
+
+1. LTS (Long-Term Scheduler): 
+Imagine you're organizing a school event, and you have a list of activities to plan.
+The long-term scheduler is like a planner who decides which activities will take place and when.
+It looks at the big picture and selects which tasks or processes should be loaded into the system for execution.
+The long-term scheduler considers factors like available resources, system capacity, and the overall goals of the system.
+It helps maintain a balanced workload and ensures that the system doesn't become overloaded.
+
+2. STS (Short-Term Scheduler): 
+Now let's imagine you're at a party with your friends, and there's a DJ playing music.
+The short-term scheduler is like the DJ who decides which song to play next.
+It focuses on selecting the tasks or processes that will execute immediately or in the near future.
+The short-term scheduler decides which task gets to use the CPU (Central Processing Unit) at a given moment. 
+It takes into account factors like task priority, fairness, and maximizing CPU utilization.
+The short-term scheduler plays a crucial role in managing tasks efficiently and ensuring that each task gets a turn to use the CPU.
+
+3. Preemptive: 
+Suppose you're watching a movie, and suddenly you get an important phone call. 
+You pause the movie, take the call, and then resume watching where you left off.
+Preemptive scheduling works similarly.
+It allows a higher-priority task to interrupt and temporarily suspend a lower-priority task that is currently executing.
+The higher-priority task takes over the CPU and starts executing immediately.
+Preemptive scheduling ensures that critical or urgent tasks can be handled promptly, even if lower-priority tasks are in progress.
+
+4. Non-preemptive: 
+Imagine you're solving a jigsaw puzzle, and once you start working on a piece,
+you don't let anyone else touch it until you finish.
+Non-preemptive scheduling works in a similar way. 
+Once a task starts executing, it keeps the CPU until it completes or voluntarily gives up control.
+Lower-priority tasks have to wait until the currently executing task finishes. 
+Non-preemptive scheduling is simpler but may lead to situations where important tasks have to wait for a long time,
+especially if long-running tasks or infinite loops are involved.
+
+These concepts are used in operating systems to manage tasks and processes efficiently.
+The long-term scheduler makes big decisions about task admission, 
+the short-term scheduler handles task execution, 
+preemptive scheduling allows higher-priority tasks to interrupt lower-priority ones,
+and non-preemptive scheduling ensures tasks complete before switching to other tasks. 
+These schedulers work together to maintain system performance, fairness, and responsiveness.
